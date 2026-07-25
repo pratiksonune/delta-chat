@@ -1,0 +1,41 @@
+{
+  "pid_a": "data/samples/pair_001/pid_a.pdf",
+  "pid_b": "data/samples/pair_001/pid_b.pdf",
+  "qa_pairs": [
+    {
+      "qa_id": "qa_01",
+      "question": "What is the relief set pressure for PSV 9066A and did it change?",
+      "expected_keywords": ["257", "262", "bar"],
+      "expected_citation_source": "delta_report",
+      "note": "Should surface the 257 -> 262 bar(g) change on PSV 9066A."
+    },
+    {
+      "qa_id": "qa_02",
+      "question": "Did the TIT-9211 high alarm setpoint change between revisions?",
+      "expected_keywords": ["145", "150"],
+      "expected_citation_source": "delta_report",
+      "note": "Should surface the H:145 -> H:150 change near TIT-9211 / the balance line cooler."
+    },
+    {
+      "qa_id": "qa_03",
+      "question": "Was any instrument tag removed in the revised drawing?",
+      "expected_keywords": ["26GT9281", "removed"],
+      "expected_citation_source": "delta_report",
+      "note": "Should surface the removal of tag 26GT9281."
+    },
+    {
+      "qa_id": "qa_04",
+      "question": "What is the type of compressor shown on this P&ID?",
+      "expected_keywords": ["centrifugal", "variable speed"],
+      "expected_citation_source": "pid_a",
+      "note": "A content question about PID A alone (not delta-related) -- tests grounding on the base document, not just the delta report."
+    },
+    {
+      "qa_id": "qa_05",
+      "question": "What changed on the drawing overall?",
+      "expected_keywords": ["257", "262", "26GT9281", "145", "150"],
+      "expected_citation_source": "delta_report",
+      "note": "Open-ended 'what changed' question -- should touch multiple delta entries."
+    }
+  ]
+}

@@ -17,8 +17,6 @@ dist/
 *.egg-info/
 out/
 observability_runs/
-data/
-eval/
 .vscode/
 .idea/
 .ipynb_checkpoints/

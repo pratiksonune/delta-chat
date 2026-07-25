@@ -1,0 +1,51 @@
+{
+  "pid_a": "data/samples/pair_001/pid_a.pdf",
+  "pid_b": "data/samples/pair_001/pid_b.pdf",
+  "provenance": "See data/samples/pair_001/PROVENANCE.md and make_pid_b.py -- these are the exact, deliberately-applied edits, not independently discovered ground truth, so precision/recall here measures 'did the pipeline recover edits we know are there' rather than inter-annotator agreement.",
+  "changes": [
+    {
+      "gt_id": "gt_01",
+      "change_type": "modified",
+      "item_type": "dimension",
+      "page": 0,
+      "location": {"x0": 851, "top": 60, "x1": 860, "bottom": 66},
+      "location_tolerance_pt": 60,
+      "before_text": "257",
+      "after_text": "262",
+      "note": "PSV 9066A relief set pressure changed from 257 bar(g) to 262 bar(g)."
+    },
+    {
+      "gt_id": "gt_02",
+      "change_type": "modified",
+      "item_type": "dimension",
+      "page": 0,
+      "location": {"x0": 850, "top": 358, "x1": 866, "bottom": 365},
+      "location_tolerance_pt": 60,
+      "before_text": "H:145",
+      "after_text": "H:150",
+      "note": "TIT-9211 balance-line cooler high alarm changed from 145 to 150."
+    },
+    {
+      "gt_id": "gt_03",
+      "change_type": "removed",
+      "item_type": "tag",
+      "page": 0,
+      "location": {"x0": 892, "top": 434, "x1": 916, "bottom": 440},
+      "location_tolerance_pt": 40,
+      "before_text": "26GT9281",
+      "after_text": null,
+      "note": "Instrument tag 26GT9281 (spare/duplicate gauge) removed entirely."
+    },
+    {
+      "gt_id": "gt_04",
+      "change_type": "added",
+      "item_type": "note",
+      "page": 0,
+      "location": {"x0": 955, "top": 728, "x1": 1150, "bottom": 758},
+      "location_tolerance_pt": 80,
+      "before_text": null,
+      "after_text": "37. TEMP BYPASS INSTALLED FOR COMMISSIONING; REMOVE PRIOR TO PSV RE-CERT.",
+      "note": "New margin note 37 added in Rev B, no equivalent in Rev A."
+    }
+  ]
+}
